@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: aliceblue;
+            padding: 27px;
+            font-size: 27 px;
+            text-align: center;
+        }
+        li {
+            margin: auto;
+            width: fit-content;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Profile <%=person %></h1>
+    <h1>Age : <%=data.age %></h1>
+    <h1>Job : <%=data.job %></h1>
+    <h1>Friend List </h1>
+    <ul>
+        <% data.friend.forEach((item) => { %>
+            <li> <%= item %> </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
