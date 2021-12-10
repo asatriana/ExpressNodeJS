@@ -9,7 +9,7 @@ Here is how to use this code
 5. Refer to website : npmjs.com to install another module such as express , nodemon
     type CLI : npm install express
                npm init
-    this will create package
+    this will create package-json
    
     Type CLI : npm install -g nodemon
    
@@ -21,14 +21,6 @@ At line:1 char:1
 + ~~~~~~~
     + CategoryInfo          : SecurityError: (:) [], PSSecurityException
     + FullyQualifiedErrorId : UnauthorizedAccess
-PS C:\Users\lenovo\Desktop\Projects\ExpressNodeJS\streambuff> nodemon approuting.js
-information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
-At line:1 char:1
-+ nodemon approuting.js
-+ ~~~~~~~
-    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
-    + FullyQualifiedErrorId : UnauthorizedAccess
-   
    
  please do likethis on power script
    1. Get-ExecutionPolicy -List
@@ -39,3 +31,6 @@ At line:1 char:1
  LocalMachine       Undefined
    
    2. Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   
+ 8. Call nodemon app.js again
+      nodemon .\approuting.js
