@@ -9,8 +9,8 @@ app.get('/',(req,res) =>{
 });
 
 
-app.get('/about',(req,res) =>{
-    res.render('about');
+app.get('/about',(req,res) =>{ // add query string into about http://localhost:3000/about?job=developer&name=alex
+    res.render('about', {qs : req.query}); // add query into views
 });
 
 app.get('/profiles/:id',(req,res) =>{
