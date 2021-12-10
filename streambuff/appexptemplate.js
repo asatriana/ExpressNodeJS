@@ -2,6 +2,7 @@ const express = require('express');
 
 const app = express();
 app.set('view engine','ejs');
+app.use('/assets', express.static('assets')); // http://localhost:3000/assets/styles.css
 
 app.get('/',(req,res) =>{
     res.render('index');
