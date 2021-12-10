@@ -15,19 +15,20 @@
 </head>
 <body>
     <%- include('partials/nav.ejs') %>
-    <h1> About Page </h1>
-    <form action="/about" method="post">
-        <label for="nama"> Name </label>
-        <input type="text" name="nama" id="nama" value="<%= qs.name %>" >
+    <h1> About Page : Success after submit POST </h1>
+    <p> Name : <%= data.nama %></p>
+    <p> He is <b> <%= data.job %> </b> </p>
+    <p> Contact : <%= data.email %></p>
 
-        <label for="job"> Job </label>
-        <input type="text" name="job" id="job" value="<%= qs.job %>" >
+ 
+ 
+ 
 
-        <label for="email"> Email </label>
-        <input type="text" name="email" id="email" value="" >
+ 
+ 
 
-        <button type="submit" > Submit </button>
-    </form>
+ 
+    
 
 
 

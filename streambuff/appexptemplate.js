@@ -1,6 +1,9 @@
 const express = require('express');
+const bodyParser = require ('body-parser');
 
 const app = express();
+const urlencodedParser = bodyParser.urlencoded({extended : false});
+
 app.set('view engine','ejs');
 app.use('/assets', express.static('assets')); // http://localhost:3000/assets/styles.css
 
@@ -11,6 +14,11 @@ app.get('/',(req,res) =>{
 
 app.get('/about',(req,res) =>{ // add query string into about http://localhost:3000/about?job=developer&name=alex
     res.render('about', {qs : req.query}); // add query into views
+});
+
+app.post('/about',urlencodedParser , (req,res) => {
+    console.log(req.body);
+    res.render('about-success', {data : req.body});
 });
 
 app.get('/profiles/:id',(req,res) =>{
