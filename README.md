@@ -1,5 +1,13 @@
 # ExpressNodeJS
 Starter learning about NodeJS and Express
+
+Module we use :
+  npm install express
+  npm install nodemon
+  npm install ejs
+  npm install body-parser
+
+
 Here is how to use this code
 1. Clone this project to current working folder of your laptop
 2. Ensure Node JS already installed
