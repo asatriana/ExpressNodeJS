@@ -4,12 +4,12 @@ const app = express();
 app.set('view engine','ejs');
 
 app.get('/',(req,res) =>{
-    res.sendFile(__dirname+'/index.html');
+    res.render('index');
 });
 
 
 app.get('/about',(req,res) =>{
-    res.send('About Page');
+    res.render('about');
 });
 
 app.get('/profiles/:id',(req,res) =>{
